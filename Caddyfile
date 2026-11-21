@@ -1,0 +1,6 @@
+# 1. Point your domain at the VM's external IP (e.g. yourname.duckdns.org).
+# 2. Replace the domain below with it.
+# Caddy fetches and renews the Let's Encrypt certificate automatically.
+swedish-quest.duckdns.org {
+	reverse_proxy app:3000
+}
